@@ -14,6 +14,7 @@ def fetch_data(time_point: datetime = datetime.now(), time_delta: int = 7, type:
     Fetch data from Elasticsearch between a time range.
     If the range spans two different months, it will split the query accordingly.
     """
+    print(Elasticsearch.__version__)
     client = Elasticsearch(
         url,
         request_timeout=30,
