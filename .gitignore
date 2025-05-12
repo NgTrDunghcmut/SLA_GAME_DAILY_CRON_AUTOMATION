@@ -1,0 +1,7 @@
+__pycache__
+data
+filebrowser.db
+*.xlsx
+*.csv
+*.json
+.env

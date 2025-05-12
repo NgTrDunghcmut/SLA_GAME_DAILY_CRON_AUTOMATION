@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    ports:
+      - "8080:80" 
+    volumes:
+      - ./data:/srv       #
+      - ./filebrowser.db:/database/filebrowser.db  #
+      - ./config:/config   
+    restart: unless-stopped
