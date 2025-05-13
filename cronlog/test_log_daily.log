@@ -1,0 +1,61 @@
+starting daily the process at: 2025-05-13 10:59:01
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/sla_get_daily.sh: 5: source: not found
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:71: DeprecationWarning: The 'body' parameter is deprecated for the 'search' API and will be removed in a future version. Instead use API parameters directly. See https://github.com/elastic/elasticsearch-py/issues/1698 for more information
+  resp = client.search(index=idx, body=query, scroll="2m")
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:135: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week = [round((g[1].sum() / len(g[1]))[1], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:136: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week = [round((g[1].sum() / len(g[1]))[0], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:143: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week += [round((g[1].sum() / len(g[1]))[1], 2) for g in group1]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:144: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week += [round((g[1].sum() / len(g[1]))[0], 2) for g in group1]
+Running main.py as script
+Mode selected: up
+✅ Data successfully fetched
+✅ Data successfully fetched
+✅ Data successfully fetched
+cleared from 118.71.46.254
+{'vip':            date          service  ...  latency_avg region
+6    2025-05-12     EVPL Channel  ...         0.00      5
+7    2025-05-12     EVPL Channel  ...       178.03      5
+8    2025-05-12     EVPL Channel  ...         0.00      5
+9    2025-05-12     EVPL Channel  ...         0.00      5
+10   2025-05-12     EVPL Channel  ...       175.46      5
+..          ...              ...  ...          ...    ...
+158  2025-05-12  Forza_Horizon_4  ...       240.87      1
+159  2025-05-12  Path_Of_Exile_2  ...       138.64      1
+160  2025-05-12  Path_Of_Exile_2  ...        88.98      1
+161  2025-05-12  Path_Of_Exile_2  ...       216.83      1
+162  2025-05-12  Path_Of_Exile_2  ...        22.73      1
+
+[136 rows x 6 columns], 'normal':            date          service  ...  latency_avg region
+23   2025-05-12     EVPL Channel  ...         0.00      5
+24   2025-05-12     EVPL Channel  ...       178.13      5
+25   2025-05-12     EVPL Channel  ...         0.00      5
+26   2025-05-12     EVPL Channel  ...         0.00      5
+27   2025-05-12     EVPL Channel  ...       175.43      5
+..          ...              ...  ...          ...    ...
+158  2025-05-12     EVPL Channel  ...       194.69      1
+159  2025-05-12  Path_Of_Exile_2  ...       138.66      1
+160  2025-05-12  Path_Of_Exile_2  ...        89.03      1
+161  2025-05-12  Path_Of_Exile_2  ...       216.82      1
+162  2025-05-12  Path_Of_Exile_2  ...        22.69      1
+
+[136 rows x 6 columns], 'rush':            date          service  ...  latency_avg region
+0    2025-05-12         Fortnite  ...        69.80      5
+1    2025-05-12     StarCraft_II  ...       236.50      5
+2    2025-05-12    Fifa_Online_4  ...        20.58      5
+3    2025-05-12            CS_GO  ...        24.85      5
+4    2025-05-12            CS_GO  ...        34.52      5
+..          ...              ...  ...          ...    ...
+158  2025-05-12  Strike_of_Kings  ...        21.50      1
+159  2025-05-12  Path_Of_Exile_2  ...       138.56      1
+160  2025-05-12  Path_Of_Exile_2  ...        88.83      1
+161  2025-05-12  Path_Of_Exile_2  ...       216.89      1
+162  2025-05-12  Path_Of_Exile_2  ...        22.86      1
+
+[159 rows x 6 columns]}
+connected
+Uploaded: ./result/daily_average_data_for_game_05-13.xlsx
+DONE

@@ -1,4 +1,4 @@
-echo "starting the process at: $(date '+%Y-%m-%d %H:%M:%S')"
+echo "starting daily the process at: $(date '+%Y-%m-%d %H:%M:%S')"
 
 cd ~/Desktop/work/SLA_PROBE/
 

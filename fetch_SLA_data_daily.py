@@ -117,7 +117,7 @@ def main(mode,day):
         print("cleared from 118.71.46.254")
     list_data = {"vip":datavip.drop(columns="source_ip"), "normal":data.drop(columns="source_ip"), "rush":data2.drop(columns="source_ip")}
 
-    print(list_data)
+    # print(list_data)
 
     for idx, i in list_data.items():
         list_data[idx] = i.groupby(['ip', 'date',"region"]).agg(

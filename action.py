@@ -8,7 +8,7 @@ def filebrowseraction(file=None,args="up"):
         print("connected")
         try:
             if file and args == "up":
-                await client.upload(local_path=file, remote_path="SLA_GAME/")
+                await client.upload(local_path=file, remote_path="SLA_GAME/",override=True)
                 print(f"Uploaded: {file}")
             elif args == "del":
 
