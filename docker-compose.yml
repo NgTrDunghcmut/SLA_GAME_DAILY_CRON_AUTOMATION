@@ -11,3 +11,23 @@ services:
       - ./filebrowser.db:/database/filebrowser.db  #
       - ./config:/config   
     restart: unless-stopped
+
+
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    # user: "1000:1000"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ROOTSQLPWD}
+      MYSQL_DATABASE: ${SQLDB}
+      MYSQL_USER: ${MYSQLUSER}
+      MYSQL_PASSWORD: ${MYSQLUSERPWD}
+    restart: unless-stopped
+    volumes:
+      - mysqldata:/var/lib/mysql
+
+volumes:
+  mysqldata:

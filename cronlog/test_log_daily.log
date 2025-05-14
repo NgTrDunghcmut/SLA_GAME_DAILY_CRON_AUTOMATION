@@ -59,3 +59,45 @@ cleared from 118.71.46.254
 connected
 Uploaded: ./result/daily_average_data_for_game_05-13.xlsx
 DONE
+starting daily the process at: 2025-05-14 08:35:01
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/sla_get_daily.sh: 5: source: not found
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:71: DeprecationWarning: The 'body' parameter is deprecated for the 'search' API and will be removed in a future version. Instead use API parameters directly. See https://github.com/elastic/elasticsearch-py/issues/1698 for more information
+  resp = client.search(index=idx, body=query, scroll="2m")
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:135: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week = [round((g[1].sum() / len(g[1]))[1], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:136: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week = [round((g[1].sum() / len(g[1]))[0], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:143: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week += [round((g[1].sum() / len(g[1]))[1], 2) for g in group1]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:144: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week += [round((g[1].sum() / len(g[1]))[0], 2) for g in group1]
+Running main.py as script
+Mode selected: up
+✅ Data successfully fetched
+✅ Data successfully fetched
+✅ Data successfully fetched
+cleared from 118.71.46.254
+connected
+Uploaded: ./result/daily_average_data_for_game_05-14.xlsx
+DONE
+starting daily the process at: 2025-05-14 09:10:01
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/sla_get_daily.sh: 5: source: not found
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:71: DeprecationWarning: The 'body' parameter is deprecated for the 'search' API and will be removed in a future version. Instead use API parameters directly. See https://github.com/elastic/elasticsearch-py/issues/1698 for more information
+  resp = client.search(index=idx, body=query, scroll="2m")
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:135: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week = [round((g[1].sum() / len(g[1]))[1], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:136: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week = [round((g[1].sum() / len(g[1]))[0], 2) for g in group2]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:143: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  latency_avg_per_week += [round((g[1].sum() / len(g[1]))[1], 2) for g in group1]
+/home/dungnt378/Desktop/work/SLA_PROBE/SLA_GAME/fetch_SLA_data_daily.py:144: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  packetloss_avg_per_week += [round((g[1].sum() / len(g[1]))[0], 2) for g in group1]
+Running main.py as script
+Mode selected: up
+✅ Data successfully fetched
+✅ Data successfully fetched
+✅ Data successfully fetched
+cleared from 118.71.46.254
+connected
+Uploaded: ./result/daily_average_data_for_game_05-14.xlsx
+DONE

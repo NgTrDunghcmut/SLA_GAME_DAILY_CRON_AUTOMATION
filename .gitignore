@@ -5,3 +5,4 @@ filebrowser.db
 *.csv
 *.json
 .env
+mysqldata
